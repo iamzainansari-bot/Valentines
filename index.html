@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Muqaddas Javed ❤️</title>
+
+<style>
+
+body{
+margin:0;
+background:radial-gradient(circle at center,#ff0066,#660033,#000000);
+color:white;
+font-family:Segoe UI;
+text-align:center;
+overflow:hidden;
+}
+
+h1{
+margin-top:18%;
+font-size:60px;
+text-shadow:0 0 20px #ff99cc,0 0 40px #ff0066;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 20px #ff99cc;}
+to{text-shadow:0 0 60px #ff0066;}
+}
+
+.btn{
+padding:18px 40px;
+font-size:22px;
+background:linear-gradient(45deg,#ff0066,#ff99cc);
+color:white;
+border:none;
+border-radius:40px;
+text-decoration:none;
+box-shadow:0 0 20px #ff0066;
+}
+
+.heart{
+position:absolute;
+color:#ff4d88;
+font-size:30px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+from{transform:translateY(100vh);}
+to{transform:translateY(-10vh);}
+}
+
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+
+<h1>Muqaddas Javed ❤️</h1>
+
+<h2 id="typing"></h2>
+
+<br>
+
+<a href="page1.html" class="btn">Enter Love World ✨</a>
+
+<script>
+
+var text="Happy Valentine's Day Bestie 💖";
+var i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,80);
+}
+}
+
+typing();
+
+for(let i=0;i<30;i++){
+let heart=document.createElement("div");
+heart.innerHTML="❤";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*4+3)+"s";
+document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
